@@ -43,7 +43,7 @@ h1 {
   bottom: 25px;
   width: 100%;
   font-size: 28px;
-  color: #ff9ecf;
+  color: #d7f4ff;
   padding: 0 20px;
   font-weight: 600;
   text-shadow: 0 0 8px rgba(255,255,255,0.7);
@@ -99,8 +99,16 @@ h1 {
   display: none;
   position: fixed;
   inset: 0;
-  background: url("final-bg.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background-color: black; /* optional aesthetic */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#finalPage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 </style>
 
@@ -125,7 +133,9 @@ h1 {
   <button id="yesBtn">Yes 💖</button>
 </div>
 
-<div id="finalPage"></div>
+<div id="finalPage">
+  <img src="final-bg.jpg">
+</div>
 
 <audio id="bgMusic" loop>
   <source src="music.mp3" type="audio/mpeg">
